@@ -1,13 +1,8 @@
 This is the repo I used to store my dot files.
 
-## Deploy All
-```bash
-bash <(curl -s https://raw.githubusercontent.com/yongcongwang/dotfiles/vim/deploy.sh) all
-```
-
 ## Install
 ```Bash
-git clone git@github.com:yongcongwang/dotfiles.git .dotfiles &&
+git clone git@github.com:yongcongwang/dotfiles.git .dotfiles
 ```
 
 ## Configure
