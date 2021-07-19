@@ -24,3 +24,4 @@ The `config_name` can be:
 - v2ray
 - i3
 - i3status
+- git
