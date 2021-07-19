@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/wyc/.dotfiles/v2ray'
+let g:netrw_dirhist_0='/home/wyc/.dotfiles'
+let g:netrw_dirhist_9='/home/wyc/.dotfiles/bash'
+let g:netrw_dirhist_8='/home/wyc/.dotfiles'
+let g:netrw_dirhist_7='/home/wyc/dotfiles'
+let g:netrw_dirhist_6='/home/wyc/dotfiles/bash'
+let g:netrw_dirhist_5='/home/wyc/dotfiles'
+let g:netrw_dirhist_4='/home/wyc/dotfiles/vim'
+let g:netrw_dirhist_3='/home/wyc/dotfiles'
+let g:netrw_dirhist_2='/home/wyc/dotfiles/v2ray'

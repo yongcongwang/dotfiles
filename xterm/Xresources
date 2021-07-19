@@ -1,0 +1,40 @@
+*.termName: xterm-256color
+*.vt100.locale: false
+*.vt100.utf8: true
+*.vt100.metaSendsEscape: true
+*.vt100.backarrowKey: false
+*.ttyModes: erase ^?
+*.vt100.saveLines: 4096
+
+*.vt100.faceName: DejaVu Sans Mono:style=Book
+*.vt100.faceNameDoublesize: WenQuanYi Zen Hei Mono
+*.vt100.faceSize: 10
+
+*.vt100.colorBD: Black
+*.vt100.colorBDMode: false
+*.vt100.colorUL: Black
+*.vt100.colorULMode: false
+
+! based on https://mayccoll.github.io/Gogh/
+! Light color
+*foreground:     #000000
+*background:     #FFFFFF
+
+! 0-7(8-15): black, red, green, yello, blue, magenta, cyan, white
+*color0:          #000000
+*color1:          #f8282a
+*color2:          #328a5d
+*color3:          #fa701d
+*color4:          #135cd0
+*color5:          #9f00bd
+*color6:          #33c3c1
+*color7:          #b3b3b3
+
+*color8:          #555753
+*color9:          #fb0416
+*color10:         #2cc631
+*color11:         #fdd727
+*color12:         #1670ff
+*color13:         #e900b0
+*color14:         #3ad5ce
+*color15:         #eeeeec

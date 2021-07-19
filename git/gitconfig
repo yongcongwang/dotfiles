@@ -1,0 +1,7 @@
+[user]
+	name = yongcong.wang
+	email = yongcong.wang@outlook.com
+[core]
+	editor = vim
+[init]
+	defaultBranch = master
