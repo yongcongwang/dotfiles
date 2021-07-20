@@ -43,15 +43,10 @@
                     {
                         "users": [
                             {
-                                // "id": "b831381d-6324-4d53-ad4f-8cda48b30811"
-                                // "id": "45C3C8EC-86CE-9BD3-8618-E3623577A715"
-				"id": "5138575c-e280-465e-922e-51cb67021017"
-
+                              "id": "5138575c-e280-465e-922e-51cb67021017"
                             }
                         ],
                         "port": 10086,
-                        // "port": 8881,
-                        // "address": "us.b.cloudv2.top"
                         "address": "vps.yongcong.wang"
                     }
                 ]
