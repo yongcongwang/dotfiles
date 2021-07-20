@@ -2,7 +2,7 @@ This is the repo I used to store my dot files.
 
 ## Install
 ```Bash
-git clone git@github.com:yongcongwang/dotfiles.git .dotfiles
+git clone git@github.com:yongcongwang/dotfiles.git ~/.dotfiles && cd ~/.dotfiles
 ```
 
 ## Configure
