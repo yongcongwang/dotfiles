@@ -55,6 +55,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run -b
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# toggle between worksapce
+bindsym $mod+Tab workspace back_and_forth
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
