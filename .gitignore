@@ -1,4 +1,5 @@
 # vim
 *.swp
+*.netrwhist
 # vscode
 .vscode

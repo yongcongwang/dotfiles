@@ -35,8 +35,7 @@ function conf_vim() {
   link $ROOT/vim/vimrc      $HOME/.vimrc
 }
 
-function conf_bash() {
-  link $ROOT/bash/bashrc    $HOME/.bashrc
+function conf_bash() { link $ROOT/bash/bashrc    $HOME/.bashrc
 }
 
 function conf_i3() {
@@ -60,28 +59,19 @@ function conf_git() {
   link $ROOT/git/gitconfig $HOME/.gitconfig
 }
 
+function conf_tmux() {
+  link $ROOT/tmux/tmux.conf $HOME/.tmux.conf
+}
+
 function main() {
+  if [[ $PWD != $ROOT ]]; then
+    echo "Erorr: $PWD is not correct location: $ROOT"
+    exit 0
+  fi
+
   case $1 in
-    vim)
-      conf_vim
-      ;;
-    bash)
-      conf_bash
-      ;;
-    i3)
-      conf_i3
-      ;;
-    i3status)
-      conf_i3status
-      ;;
-    v2ray)
-      conf_v2ray $*
-      ;;
-    xterm)
-      conf_xterm
-      ;;
-    git)
-      conf_git
+    vim|bash|i3|i3status|v2ray|xterm|git|tmux)
+      conf_$1 $*
       ;;
     *)
       echo "ERROR: Unknown paramemter: $*"
