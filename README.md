@@ -20,3 +20,4 @@ The `config_name` can be:
 - i3
 - i3status
 - git
+- tmux
