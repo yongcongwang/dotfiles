@@ -29,17 +29,18 @@ function require_sudo() {
   fi
 }
 
-# deploy softwares
+# deploy software confs
 function conf_vim() {
-  link $ROOT/vim            $HOME/.vim
-  link $ROOT/vim/vimrc      $HOME/.vimrc
+  link $ROOT/vim $HOME/.vim
+  link $ROOT/vim/vimrc $HOME/.vimrc
 }
 
-function conf_bash() { link $ROOT/bash/bashrc    $HOME/.bashrc
+function conf_bash() {
+  link $ROOT/bash/bashrc $HOME/.bashrc
 }
 
 function conf_i3() {
-  link $ROOT/i3/config      $HOME/.config/i3/config
+  link $ROOT/i3/config $HOME/.config/i3/config
 }
 
 function conf_i3status() {
