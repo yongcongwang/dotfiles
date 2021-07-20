@@ -47,7 +47,7 @@ git_status() {
   fi
 }
 
-PS1='\u@\h:$BOLD$BLUE\w$(git_status)$(git_branch)$RESET$ '
+PS1='\u@\h:\[$BOLD\]\[$BLUE\]\w\[$(git_status)\]$(git_branch)\[$RESET\]$ '
 
 
 # colored GCC warnings and errors
