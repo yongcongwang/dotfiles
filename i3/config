@@ -190,7 +190,7 @@ bar {
     workspace_buttons yes
     tray_output       none
 
-    font pango:DejaVu Sans Mono, Icons 10
+    font pango:DejaVu Sans Mono, Icons 8
 
     colors {
         background #000000
