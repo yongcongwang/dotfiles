@@ -113,7 +113,6 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 export PATH="/home/wyc/.local/bin:$PATH"
-source /opt/ros/noetic/setup.bash
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -139,8 +138,14 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 # set -o vi
 export EDITOR=vim
 # startx at login
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec startx
-fi
+# if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+#   exec startx
+# fi
 
 alias chromium='nohup chromium --proxy-server="socks5://localhost:1080" --host-resolver-rules="MAP * ~NOTFOUND , EXCLUDE localhost" &>/dev/null &'
+
+# source ros
+ros_path=/opt/ros/noetic/setup.bash
+if [[ -f $ros_path ]]; then
+  source $ros_path
+fi
