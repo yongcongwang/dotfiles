@@ -49,7 +49,7 @@ function conf_i3status() {
 
 function conf_v2ray() {
   require_sudo $*
-  link /home/$2/.dotfiles/v2ray/client.json /etc/v2ray/config.json
+  cp /home/$2/.dotfiles/v2ray/client.json /etc/v2ray/config.json
 }
 
 function conf_xterm() {
@@ -65,7 +65,7 @@ function conf_tmux() {
 }
 
 function main() {
-  if [[ $PWD != $ROOT ]]; then
+  if [[ $UID == 0 && $PWD != $ROOT ]]; then
     echo "Erorr: $PWD is not correct location: $ROOT"
     exit 0
   fi
