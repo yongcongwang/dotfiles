@@ -65,7 +65,7 @@ function conf_tmux() {
 }
 
 function main() {
-  if [[ $UID == 0 && $PWD != $ROOT ]]; then
+  if [[ $UID != 0 && $PWD != $ROOT ]]; then
     echo "Erorr: $PWD is not correct location: $ROOT"
     exit 0
   fi
