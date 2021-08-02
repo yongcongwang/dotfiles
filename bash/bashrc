@@ -47,7 +47,7 @@ git_status() {
   fi
 }
 
-PS1='\u@\h:\[$BOLD\]\[$BLUE\]\w\[$(git_status)\]$(git_branch)\[$RESET\]$ '
+PS1='\[$RESET\]\u@\h:\[$BOLD\]\[$BLUE\]\w\[$(git_status)\]$(git_branch)\[$RESET\]$ '
 
 
 # colored GCC warnings and errors
@@ -108,7 +108,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias chromium='nohup chromium --proxy-server="socks5://localhost:1080" \
+alias chromium='nohup chromium --proxy-server="socks5://localhost:7890" \
                 --host-resolver-rules="MAP * ~NOTFOUND , EXCLUDE localhost" \
                 &>/dev/null &'
 
