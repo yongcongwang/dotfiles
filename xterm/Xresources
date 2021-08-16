@@ -10,12 +10,6 @@
 *.vt100.faceNameDoublesize: WenQuanYi Zen Hei Mono
 *.vt100.faceSize: 10
 
-*.vt100.colorBDMode: true
-*.vt100.colorBD: red
-*.vt100.colorULMode: true
-*.vt100.colorUL: cyan
-*.vt100.veryBoldColors: 6
-
 ! based on https://mayccoll.github.io/Gogh/
 ! Light color
 *foreground:     #000000
