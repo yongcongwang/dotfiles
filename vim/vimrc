@@ -1,5 +1,6 @@
 " By yongcong.wang @ 2019-12-05
 "
+
 " => General
 set history=5000 " count of history lines
 
@@ -97,7 +98,7 @@ set wrap " wrap lines
 " set lbr " line break on 80 chars
 " set tw=80
 
-set nu " show line num
+" set nu " show line num
 
 set foldenable " no fold code
 set laststatus=2
@@ -140,3 +141,5 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC " auto reload config
 " hilight tailing space
 "highlight ExtraWhitespace ctermbg=red guibg=red
 "match ExtraWhitespace /\s\+$/
+"
+set clipboard=exclude:.*

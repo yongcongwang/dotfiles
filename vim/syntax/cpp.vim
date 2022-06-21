@@ -83,6 +83,9 @@ syntax keyword cppSTLfunction addressof
 syntax keyword cppSTLfunction allocate_shared
 syntax keyword cppSTLfunction get_deleter
 
+" user defined
+syntax keyword cppUserType uint8 uint16 uint32 uin64 int8 int16 int32 int64
+
 " set highlight
 hi def link c_ansi_function Function
 hi def link cppSTLbool         Boolean
@@ -100,3 +103,4 @@ hi def link cppSTLenum         Typedef
 hi def link cppSTLconcept      Typedef
 hi def link cppSTLios          Function
 hi def link cppSTLcast         Statement 
+hi def link cppUserType        typedef

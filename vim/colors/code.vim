@@ -11,7 +11,7 @@
 " | Magenta       | 5  | 102 | #878787 | 244 | #808080 |
 " | Cyan          | 6  | 24  | #005f87 | 173 | #d7875f |
 " | White         | 7  | 238 | #444444 | 252 | #d0d0d0 |
-" | Lisght Gray   | 8  | 250 | #bcbcbc | 240 | #585858 |
+" | Light Gray    | 8  | 250 | #bcbcbc | 240 | #585858 |
 " | Light Red     | 9  | 160 | #d70000 | 71  | #5faf5f |
 " | Light Green   | 10 | 162 | #d70087 | 148 | #afd700 |
 " | Light Yellow  | 11 | 91  | #8700af | 140 | #af87d7 |
@@ -83,8 +83,8 @@ highlight Search         ctermfg=0    ctermbg=11
 if &background == "light"
   highlight LineNr       ctermfg=7
   highlight Comment      ctermfg=250
-  highlight ColorColumn  ctermfg=8    ctermbg=7
-  highlight Folded       ctermfg=8    ctermbg=7
+  highlight ColorColumn  ctermfg=8    ctermbg=15
+  highlight Folded       ctermfg=8    ctermbg=15
   highlight FoldColumn   ctermfg=8    ctermbg=7
   highlight Pmenu        ctermfg=0    ctermbg=7
   highlight PmenuSel     ctermfg=7    ctermbg=0
