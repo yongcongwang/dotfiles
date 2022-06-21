@@ -6,9 +6,9 @@
 *.ttyModes: erase ^?
 *.vt100.saveLines: 4096
 
-*.vt100.faceName: DejaVu Sans Mono:style=Book
+*.vt100.faceName: Monospace
 *.vt100.faceNameDoublesize: WenQuanYi Zen Hei Mono
-*.vt100.faceSize: 10
+*.vt100.faceSize: 13
 
 ! based on https://mayccoll.github.io/Gogh/
 ! Light color
