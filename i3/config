@@ -26,6 +26,7 @@ font pango:monospace 8
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -k --nofork
 exec --no-startup-id fcitx5 -d
+exec --no-startup-id feh --bg-center ~/Pictures/arch_logo.png
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -40,6 +41,10 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
+
+# Title bar height, set with norma | none | pixel #
+default_border normal
+default_floating_border normal
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
@@ -146,7 +151,7 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # lock screen
-bindsym $mod+Control+l exec --no-startup-id i3lock -k
+# bindsym $mod+Control+l exec --no-startup-id i3lock -k
 
 focus_follows_mouse no
 
@@ -193,7 +198,7 @@ bar {
     workspace_buttons yes
     tray_output       none
 
-    font pango:DejaVu Sans Mono, Icons 8
+    font Hack, Icons 8
 
     colors {
         background #000000

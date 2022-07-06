@@ -11,7 +11,7 @@ order += "wireless _first_"
 order += "ethernet _first_"
 order += "battery all"
 order += "memory"
-order += "load"
+# order += "load"
 order += "tztime local"
 
 volume master {
@@ -46,10 +46,10 @@ ethernet _first_ {
 battery all {
         format = "%status %percentage %remaining %emptytime"
         format_down = ""
-        status_chr = "CHR"
-        status_bat = "BAT"
-        status_unk = "UNK"
-        status_full = "FULL"
+        status_chr = "BAT CHR"
+        status_bat = "BAT BAT"
+        status_unk = "BAT UNK"
+        status_full = "BAT FULL"
         path = "/sys/class/power_supply/BAT%d/uevent"
         low_threshold = 10
 }

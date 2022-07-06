@@ -6,9 +6,8 @@
 *.ttyModes: erase ^?
 *.vt100.saveLines: 4096
 
-*.vt100.faceName: Monospace
-*.vt100.faceNameDoublesize: WenQuanYi Zen Hei Mono
-*.vt100.faceSize: 13
+*.vt100.faceName: Hack
+*.vt100.faceSize: 11
 
 ! based on https://mayccoll.github.io/Gogh/
 ! Light color

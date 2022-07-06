@@ -48,7 +48,7 @@ highlight SpellRare      ctermbg=5
 highlight SpellLocal     ctermbg=14
 highlight PmenuSbar      ctermbg=8
 highlight PmenuThumb     ctermbg=0
-highlight TabLine        cterm=underline ctermfg=255 ctermbg=7
+highlight TabLine        ctermfg=255 cterm=underline ctermbg=7
 highlight TabLineSel     cterm=bold
 highlight TabLineFill    cterm=reverse
 highlight CursorColumn   ctermbg=238
@@ -56,11 +56,11 @@ highlight CursorLine     cterm=underline
 highlight MatchParen     ctermbg=14
 highlight Constant       ctermfg=124
 highlight Special        ctermfg=5
-highlight Identifier     cterm=NONE ctermfg=6
+highlight Identifier     ctermfg=6
 highlight Statement      ctermfg=31 cterm=bold
 highlight PreProc        ctermfg=5
 highlight Type           ctermfg=166
-highlight Underlined     cterm=underline ctermfg=5
+highlight Underlined     ctermfg=5 cterm=underline
 highlight Ignore         ctermfg=15
 highlight Error          ctermfg=24 ctermbg=160
 highlight Todo           ctermfg=255  ctermbg=91
