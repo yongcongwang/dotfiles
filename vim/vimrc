@@ -143,3 +143,4 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC " auto reload config
 "match ExtraWhitespace /\s\+$/
 "
 set clipboard=exclude:.*
+set shell=/bin/bash
