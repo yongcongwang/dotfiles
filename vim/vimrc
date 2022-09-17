@@ -45,7 +45,7 @@ set swapfile
 
 " tag jump
 command! MakeTags !ctags -R .
-set tags=./tags,**5/tags,tags;~
+set tags=./.tags,**5/.tags,.tags;~
 "                          ^ in working dir, or parents until home
 "                   ^ in any subfolder of working dir, depth is 5
 "           ^ sibling of open file
@@ -144,3 +144,5 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC " auto reload config
 "
 set clipboard=exclude:.*
 set shell=/bin/bash
+
+set rtp+=~/.fzf
