@@ -118,7 +118,4 @@ alias l='ls -CF'
 
 source /opt/ros/noetic/setup.bash
 
-source /usr/share/doc/fzf/examples/key-bindings.bash
-source /usr/share/doc/fzf/examples/completion.bash
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
