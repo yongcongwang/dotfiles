@@ -3,5 +3,14 @@
 	email = yongcong.wang@outlook.com
 [core]
 	editor = vim
-[init]
-	defaultBranch = master
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+	trustExitCode = true
+[mergetool]
+	trustExitCode = true
+[merge]
+	tool = vimdiff
+[alias]
+	dt = difftool
