@@ -1,0 +1,10 @@
+Host *
+    ServerAliveInterval 60
+    IdentityFile ~/.ssh/id_rsa
+
+Host server
+    HostName 106.120.180.66
+    User wangyongcong
+
+Host git.neodrive.neolix.net
+  Port 3022
