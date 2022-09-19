@@ -64,6 +64,10 @@ function conf_tmux() {
   link $ROOT/tmux/tmux.conf $HOME/.tmux.conf
 }
 
+function conf_ssh() {
+  link $ROOT/ssh/config $HOME/.ssh/config
+}
+
 function main() {
   if [[ $UID != 0 && $PWD != $ROOT ]]; then
     echo "Erorr: $PWD is not correct location: $ROOT"
@@ -71,7 +75,7 @@ function main() {
   fi
 
   case $1 in
-    vim|bash|i3|i3status|v2ray|xterm|git|tmux)
+    vim|bash|i3|i3status|v2ray|xterm|git|tmux|ssh)
       conf_$1 $*
       ;;
     *)
