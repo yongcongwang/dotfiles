@@ -44,7 +44,7 @@ set swapfile
 "set wildmenu " display all matching files when tab complete
 
 " tag jump
-command! MakeTags !ctags -R .
+command! MakeTags !ctags -f .tags -R .
 set tags=./.tags,**5/.tags,.tags;~
 "                          ^ in working dir, or parents until home
 "                   ^ in any subfolder of working dir, depth is 5
