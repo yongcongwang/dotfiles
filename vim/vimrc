@@ -51,6 +51,11 @@ set tags=./.tags,**5/.tags,.tags;~
 "           ^ sibling of open file
 set tags+=/usr/include/c++/8/tags  " cpp library
 
+" highlight spaces at the end of line
+highlight WhiteSpaceEOL ctermbg=darkgreen guibg=lightgreen
+match WhiteSpaceEOL /\s$/
+autocmd WinEnter * match WhiteSpaceEOL /\s$/
+
 " file browsing
 " let g:netrw_banner=0 " disable banner
 " let g:netrw_browse_split=4 " open in prior window
@@ -113,6 +118,9 @@ au BufRead,BufNewFile *.launch set filetype=xml
 au BufRead,BufNewFile *.dag set filetype=python
 au BufRead,BufNewFile *.pb.txt set filetype=proto
 au BufRead,BufNewFile *.ii set filetype=cpp
+
+" when you press *, just highlight and stay still
+nnoremap * :keepjumps normal! mi*`i<CR>
 
 " fold
 set foldmethod=indent " use fold indent
