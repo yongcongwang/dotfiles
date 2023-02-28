@@ -83,7 +83,7 @@ set mouse=a " use mouse in all mode, a for all mode
 
 set noundofile " no undo file
 
-set clipboard+=unnamed " share clipboard with os
+set clipboard=unnamedplus,unnamed " share clipboard with os
 
 " => Text
 set encoding=utf8 " encode

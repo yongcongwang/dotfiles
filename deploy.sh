@@ -43,6 +43,10 @@ function conf_i3() {
   link $ROOT/i3/config $HOME/.config/i3/config
 }
 
+function conf_polybar() {
+  link $ROOT/polybar/config $HOME/.config/polybar/config
+}
+
 function conf_i3status() {
   link $ROOT/i3status/config $HOME/.config/i3status/config
 }
@@ -75,7 +79,7 @@ function main() {
   fi
 
   case $1 in
-    vim|bash|i3|i3status|v2ray|xterm|git|tmux|ssh)
+    vim|bash|i3|polybar|i3status|v2ray|xterm|git|tmux|ssh)
       conf_$1 $*
       ;;
     *)
