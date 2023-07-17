@@ -8,7 +8,7 @@
 
 *.vt100.faceName: Hack
 *.vt100.faceNameDoublesize: WenQuanYi
-*.vt100.faceSize: 12
+*.vt100.faceSize: 10
 
 ! based on https://mayccoll.github.io/Gogh/
 ! Light color

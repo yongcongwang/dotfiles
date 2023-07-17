@@ -185,13 +185,13 @@ bindsym Print exec --no-startup-id flameshot gui
 # finds out, if available)
 bar {
     status_command    i3status
-    position          top
-    mode              hide 
+    position          bottom
+    mode              dock
     workspace_buttons yes
     tray_output       primary
     separator_symbol "|"
 
-    font Hack, Icons 10 
+    font Hack, Icons 8
 
     colors {
         background #ffffff

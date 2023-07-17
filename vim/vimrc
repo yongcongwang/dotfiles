@@ -32,7 +32,7 @@ set noequalalways " not resize window after new window created
 
 set noerrorbells " no error bells
 set novisualbell
-set t_vb=
+set vb t_vb=
 set tm=500
 
 set nobackup " no backup
