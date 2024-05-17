@@ -75,7 +75,7 @@ colorscheme code " colorscheme
 
 set background=light
 
-set colorcolumn=81 " color at 81
+set colorcolumn=100 " color at 100
 
 set ambiwidth=double " support chinese
 

@@ -30,7 +30,18 @@ function require_sudo() {
 }
 
 # deploy software confs
+function install_ctags() {
+  git clone https://github.com/universal-ctags/ctags.git
+  cd ctags
+  ./autogen.sh
+  ./configure
+  make
+  sudo make install
+  rm -rf ctags
+}
+
 function conf_vim() {
+  install_ctags
   link $ROOT/vim $HOME/.vim
   link $ROOT/vim/vimrc $HOME/.vimrc
 }
