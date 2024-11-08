@@ -41,8 +41,9 @@ function install_ctags() {
 }
 
 function conf_vim() {
-  install_ctags
-  link $ROOT/vim $HOME/.vim
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
   link $ROOT/vim/vimrc $HOME/.vimrc
 }
 

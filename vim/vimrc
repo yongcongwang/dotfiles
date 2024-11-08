@@ -71,9 +71,9 @@ let g:netrw_list_hide= '.*\.swp$,.*\.pyc$,.*\.git\/$'
 
 syntax enable "highlight syntax
 
-colorscheme code " colorscheme
-
+set t_Co=256   " This is may or may not needed.
 set background=light
+colorscheme PaperColor
 
 set colorcolumn=100 " color at 100
 
@@ -154,3 +154,10 @@ set clipboard=exclude:.*
 set shell=/bin/bash
 
 set rtp+=~/.fzf
+
+call plug#begin('~/.vim/plugged')
+  Plug 'NLKNguyen/papercolor-theme'
+  Plug 'ycm-core/YouCompleteMe'
+  Plug 'rhysd/vim-clang-format'
+  Plug 'octol/vim-cpp-enhanced-highlight'
+call plug#end()
