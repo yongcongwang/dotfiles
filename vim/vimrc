@@ -73,7 +73,7 @@ syntax enable "highlight syntax
 
 set t_Co=256   " This is may or may not needed.
 set background=light
-colorscheme PaperColor
+colorscheme code
 
 set colorcolumn=100 " color at 100
 
@@ -156,7 +156,6 @@ set shell=/bin/bash
 set rtp+=~/.fzf
 
 call plug#begin('~/.vim/plugged')
-  Plug 'NLKNguyen/papercolor-theme'
   Plug 'ycm-core/YouCompleteMe'
   Plug 'rhysd/vim-clang-format'
   Plug 'octol/vim-cpp-enhanced-highlight'

@@ -41,10 +41,28 @@ function install_ctags() {
 }
 
 function conf_vim() {
+  # install vim
+  git clone https://github.com/vim/vim.git src_vim
+  cd src_vim
+  ./configure --with-features=huge \
+            --enable-multibyte \
+            --enable-python3interp \
+            --with-python3-config-dir=$(python3-config --configdir) \
+            --enable-gui=auto \
+            --enable-cscope \
+            --prefix=/usr/local
+  make -j
+  sudo make install
+  rm -rf src_vim
+
+  # download vim plug
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+  # link configure
   link $ROOT/vim/vimrc $HOME/.vimrc
+
+  vim --cmd "PlugInstall" +qall
 }
 
 function conf_bash() {
