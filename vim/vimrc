@@ -162,8 +162,10 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 " YCM
-let g:ycm_enable_inlay_hints=1
+let g:ycm_enable_inlay_hints=0
 let g:ycm_enable_semantic_highlighting=1
+let g:ycm_auto_hover=''
+let g:ycm_use_scratch_buffer=0
 
 " format
-let g:clang_format#code_style = 'google'
+let g:clang_format#style_options = '-style=$HOME/.clang-format'

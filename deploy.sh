@@ -105,6 +105,10 @@ function conf_ssh() {
   link $ROOT/ssh/config $HOME/.ssh/config
 }
 
+function conf_clang-format() {
+  link $ROOT/clang-format/clang-format $HOME/.clang-format
+}
+
 function main() {
   if [[ $UID != 0 && $PWD != $ROOT ]]; then
     echo "Erorr: $PWD is not correct location: $ROOT"
@@ -112,7 +116,7 @@ function main() {
   fi
 
   case $1 in
-    vim|bash|i3|polybar|i3status|v2ray|xterm|git|tmux|ssh)
+    vim|bash|i3|polybar|i3status|v2ray|xterm|git|tmux|ssh|clang-format)
       conf_$1 $*
       ;;
     *)
