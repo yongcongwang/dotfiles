@@ -43,7 +43,7 @@ highlight Title          ctermfg=102
 highlight WarningMsg     ctermfg=124
 highlight WildMenu       ctermfg=0 ctermbg=11
 highlight Conceal        ctermfg=7 ctermbg=7
-highlight SpellBad       ctermbg=2
+highlight SpellBad       ctermfg=8 ctermbg=10
 highlight SpellRare      ctermbg=5
 highlight SpellLocal     ctermbg=14
 highlight PmenuSbar      ctermbg=8
