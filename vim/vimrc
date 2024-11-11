@@ -157,7 +157,13 @@ set rtp+=~/.fzf
 
 call plug#begin('~/.vim/plugged')
   Plug 'ycm-core/YouCompleteMe'
+  Plug 'rhysd/vim-clang-format'
+  Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
+" YCM
 let g:ycm_enable_inlay_hints=1
 let g:ycm_enable_semantic_highlighting=1
+
+" format
+let g:clang_format#code_style = 'google'

@@ -3,3 +3,5 @@
 *.netrwhist
 # vscode
 .vscode
+vim/autoload
+vim/plugged

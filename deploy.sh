@@ -61,8 +61,11 @@ function conf_vim() {
 
   # link configure
   link $ROOT/vim/vimrc $HOME/.vimrc
+  link $ROOT/vim $HOME/.vim
 
-  vim --cmd "PlugInstall" +qall
+  # install plug
+  vim -c 'PlugInstall | qa'
+  cd ~/.vim/plugged/YouCompleteMe && python3 install.py --clangd-completer
 }
 
 function conf_bash() {
