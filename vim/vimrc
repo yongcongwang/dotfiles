@@ -159,6 +159,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'ycm-core/YouCompleteMe'
   Plug 'rhysd/vim-clang-format'
   Plug 'octol/vim-cpp-enhanced-highlight'
+  Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 call plug#end()
 
 " YCM
@@ -169,3 +170,7 @@ let g:ycm_use_scratch_buffer=0
 
 " format
 let g:clang_format#style_options = '-style=$HOME/.clang-format'
+
+" leader f
+let g:Lf_ShowDevIcons = 0
+let g:Lf_WindowPosition = 'popup'
