@@ -158,13 +158,13 @@ set rtp+=~/.fzf
 call plug#begin('~/.vim/plugged')
   Plug 'ycm-core/YouCompleteMe'
   Plug 'rhysd/vim-clang-format'
-  Plug 'octol/vim-cpp-enhanced-highlight'
+  " Plug 'octol/vim-cpp-enhanced-highlight'
   Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 call plug#end()
 
 " YCM
 let g:ycm_enable_inlay_hints=0
-let g:ycm_enable_semantic_highlighting=1
+let g:ycm_enable_semantic_highlighting=0
 let g:ycm_auto_hover=''
 let g:ycm_use_scratch_buffer=0
 
