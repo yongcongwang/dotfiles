@@ -65,7 +65,7 @@ function conf_vim() {
 
   # install plug
   vim -c 'PlugInstall | qa'
-  cd ~/.vim/plugged/YouCompleteMe && python3 install.py --clangd-completer
+  cd ~/.vim/plugged/YouCompleteMe && python3 install.py --clangd-completer --force-sudo
 }
 
 function conf_bash() {

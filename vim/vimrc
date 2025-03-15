@@ -167,6 +167,7 @@ let g:ycm_enable_inlay_hints=0
 let g:ycm_enable_semantic_highlighting=0
 let g:ycm_auto_hover=''
 let g:ycm_use_scratch_buffer=0
+nnoremap <silent> <C-]> :YcmCompleter GoToDefinition<CR>
 
 " format
 let g:clang_format#style_options = '-style=$HOME/.clang-format'
