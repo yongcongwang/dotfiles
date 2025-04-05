@@ -42,6 +42,7 @@ function install_ctags() {
 
 function conf_vim() {
   # install vim
+  sudo apt install python3-dev
   git clone https://github.com/vim/vim.git src_vim
   cd src_vim
   ./configure --with-features=huge \
